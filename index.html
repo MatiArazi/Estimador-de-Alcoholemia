@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estimador Alcoholemia</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <form onsubmit="ingresarDatos(event)"> 
+        <h1> Estimador de Alcoholemia</h1>
+
+            <label>Ingrese masa </label> 0 <input onchange= "ingresarMasa(event)" type="range" id="masa" min="0" max="350"> 350 
+            <span id="datoMasa">200</span> <br>
+              
+
+        <button type="submit" > ENVIAR</button>
+    </form>
+    <style> 
+        #masa{
+            color: white;
+            border-color: blue ;
+            background-color: rgb(24, 69, 110);
+        }
+        #datoMasa{
+            color:darkviolet;
+        }
+        
+    </style>
+</body>
+</html>
